@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+            margin:0px;
+        }
+        .main1{
+            width:100vw;
+            height:10vh;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        .main1 h1{
+            margin:0px;
+    
+        }
+        .main11
+        {
+            top:50%;
+            left:15%;
+            color:white;
+            position: absolute;
+            font-size: x-large;
+            transform: translate(-50%,-50%);
+        }
+        .main12{
+            position: absolute;
+            top:50%;
+            left:60%;
+        }
+        .main12 a{
+            text-decoration: none;
+            color:white;
+            font-size: x-large;
+            padding: 10px;
+           
+        }
+        .main2{
+            width:100vw;
+            height:80vh;
+            position: relative;
+        
+        }
+        .main21{
+            position: absolute;
+            top:100px;
+            left:100px;
+            color:white;
+            font-size:large;
+        }
+        .main22{
+            position: absolute;
+            top:400px;
+            left:100px;
+            
+        }
+        .main22 button{
+            width:120px;
+            height:30px;
+            font-size: large;
+            border: 2px solid black;
+            border-radius:10px;
+        }
+        #im1{
+            width:100%;
+            height:100%
+        }
+      .main23{
+        position: absolute;
+        top:50px;
+        right:175px;
+    
+      }
+      .main24{
+        position: absolute;
+        top:150px;
+        right:175px;
+        display: none;
+        
+      }
+      .main24 img{
+        width:300px;
+        height:200px;
+        border-radius: 20px;  
+      }
+      .main23 img{
+        height:400px;
+        width:300px;
+        border-radius:200px;
+      }
+      
+        .main3{
+            width:100vw;
+            height:10vh;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        .main3 h2{
+            margin: 0px;
+        }
+        .main31
+        {
+            color:white;
+            font-size: large;
+            position: absolute;
+            top:30%;
+            left:40%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main1">
+        <div class="main11">
+            <h1>Elakia</h1>
+         </div>
+         <div class="main12">
+            <a href="#">Home</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">Experience</a>
+            <a href="#">Contact</a>
+            
+         </div>
+        
+    </div>
+    <div class="main2">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5lYOIf2CdvTSKxEPMjevnmKjJIMLgaoPs3g&s" alt="notfound" id="im1">
+         <div class="main21">
+            <h1 id="h1">Hi there,</h1>
+            <h1 id="h2">This Elakia</h1>
+            <h1 id="h3">Software Developer</h1>
+
+         </div>
+         <div class="main22">
+            <button id="b"><b>Button</b></button>
+
+         </div>
+         <div class="main23" id="vissible">
+            <img src="elakiaimage.jpg" alt="image not found">
+
+         </div>
+         <div class="main24" id="hidden">
+            <img src="mern_image1.jpeg" id="img3" alt="image not found">
+         </div>
+         
+    </div>
+   
+    <div class="main3">
+        <div class="main31">
+            <h2>mcelakia@gmail.com</h2>
+            
+        </div>
+    
+        
+        
+    </div>
+    <script>
+        document.getElementById('b').onclick=function(){
+            document.getElementById('h1').innerHTML="Junior Developer";
+            document.getElementById('h2').innerHTML="Intern in CSC Computer Education";
+            document.getElementById('h3').innerHTML="B.E(CSE)";
+            document.getElementById('vissible').style.display="none";
+            document.getElementById('hidden').style.display="block";
+
+
+        }
+
+        
+    </script>
+    
+</body>
+</html>
